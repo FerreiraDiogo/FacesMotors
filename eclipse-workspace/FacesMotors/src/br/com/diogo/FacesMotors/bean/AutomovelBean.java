@@ -18,12 +18,12 @@ public class AutomovelBean {
 		this.automovel = automovel;
 	}
 
-	public void salva(Automovel automovel) {
+	public String salva() {
 		
 		new AutomovelDAO().salvar(automovel);
 		
+		return automovel.toString();
 
-		System.out.println("teste 1 2 3");
 
 	}
 }
