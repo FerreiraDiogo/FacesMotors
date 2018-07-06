@@ -8,7 +8,7 @@ import br.com.diogo.FacesMotors.modelo.Automovel;
 @ManagedBean
 public class AutomovelBean {
 
-	public Automovel automovel = new Automovel();
+	private Automovel automovel = new Automovel();
 
 	public Automovel getAutomovel() {
 		return this.automovel;
