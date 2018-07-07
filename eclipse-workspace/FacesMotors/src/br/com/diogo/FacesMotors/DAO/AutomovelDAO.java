@@ -3,7 +3,6 @@ package br.com.diogo.FacesMotors.DAO;
 import java.util.List;
 
 import javax.persistence.EntityManager;
-import javax.persistence.Persistence;
 import javax.persistence.Query;
 
 import br.com.diogo.FacesMotors.modelo.Automovel;
@@ -15,7 +14,7 @@ public class AutomovelDAO {
 	private List<Automovel> resultado;
 	
 	public AutomovelDAO() {
-		this.em = Persistence.createEntityManagerFactory("automoveis").createEntityManager();
+		this.em = new JPAUtil().getEntityManager();
 	}
 	
 	public void salvar(Automovel auto) {
