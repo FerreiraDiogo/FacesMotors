@@ -14,12 +14,16 @@ public class TestaAutomovelBean {
 		ab.automovel.setModelo("focus");
 		ab.automovel.setObservacoes("completo!");
 		
+		ab.getAutomovel();
+		
 		System.out.println(ab.getAutomovel());
 		System.out.println(ab.automovel.getMarca());
 		System.out.println(ab.automovel.getModelo());
 		System.out.println(ab.automovel.getAnoDeFabricacao());
 		System.out.println(ab.automovel.getAnoModelo());
 		System.out.println(ab.automovel.getObservacoes());
+		
+		ab.salva();
 	}
 
 }
